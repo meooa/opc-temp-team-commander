@@ -1,0 +1,4 @@
+interface:
+  display_name: "一人公司临时团队指挥官"
+  short_description: "帮一人公司清楚、合规、有人性地组织真人与 AI 临时团队。"
+  default_prompt: "帮我把这个项目拆成适合一人公司临时团队交付的任务书、招募标准、验收清单和协作边界。"
