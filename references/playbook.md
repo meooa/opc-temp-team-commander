@@ -1,6 +1,21 @@
 # 一人公司临时团队指挥官 Playbook
 
-Use this reference when a request needs detailed work orders, recruitment messages, trial tasks, scoring, or acceptance templates.
+Use this reference when a request needs detailed work orders, recruitment messages, trial tasks, scoring, acceptance templates, payment/change rules, or closeout records.
+
+## 0. Delivery Loop
+
+Use this loop when the user wants a complete temporary-team plan.
+
+| Stage | Founder Owns | AI Helps With | Human/Provider Owns | Output |
+| --- | --- | --- | --- | --- |
+| 1. Define | client promise, budget, final standard | clarify brief, draft checklist | asks clarifying questions | one-page task brief |
+| 2. Split | priority and scope cuts | package draft, dependency map | confirms feasibility | work packages |
+| 3. Recruit | channel choice, final selection | message drafts, scoring sheet | portfolio, quote, schedule | candidate shortlist |
+| 4. Start | kickoff decision, payment node | kickoff notes, risk checklist | delivery plan | confirmed scope |
+| 5. Accept | final judgment and payment | acceptance checklist, defect list | revisions against standard | accepted handoff |
+| 6. Archive | talent ledger and lessons | summary, reusable templates | optional case permission | closeout record |
+
+If the user has no time, compress stages 1-3 into a same-day plan but keep the acceptance and payment boundaries explicit.
 
 ## 1. Team Modes
 
@@ -72,6 +87,8 @@ Channel choice rule: trust-sensitive first through known people; quality-sensiti
 任务名称：
 业务目标：
 为什么现在要做：
+负责人类型：创始人 / AI / 自由职业者 / 服务商 / 顾问 / 线下协助 / 平台服务
+任务优先级：P0 / P1 / P2
 
 交付物：
 - 文件/物品/服务：
@@ -98,11 +115,13 @@ Channel choice rule: trust-sensitive first through known people; quality-sensiti
 - 固定节点：
 - 非紧急事项回复预期：
 - 紧急联系人：
+- 不要求随时在线的说明：
 
 费用与付款：
 - 总价/阶段价：
 - 付款节点：
 - 额外需求计费规则：
+- 等待/返场/超时/路程补偿：
 
 版权/使用权：
 - 委托方可使用范围：
@@ -113,6 +132,11 @@ Channel choice rule: trust-sensitive first through known people; quality-sensiti
 - 可接触的信息：
 - 脱敏要求：
 - 删除/归还要求：
+
+结项：
+- 最终交付清单：
+- 归档位置：
+- 是否适合再次合作：
 ```
 
 ## 4. Recruitment / Inquiry Message
@@ -134,16 +158,32 @@ Channel choice rule: trust-sensitive first through known people; quality-sensiti
 4. 你需要我补充的信息
 ```
 
+For urgent Beijing offline support, use this shorter version:
+
+```text
+北京本地临时协作，时间地点和任务边界如下：
+
+时间：{日期/开始/结束}
+地点：{区域/详细地址确认后提供}
+任务：{签到/引导/物料/拍摄/维修/安装/跑腿等}
+要求：{经验/着装/工具/安全/沟通}
+费用：{金额/结算时间/是否含交通餐补}
+边界：不临时增加未约定任务；如需等待、超时、返场或更换地点，先确认补偿。
+
+有意请回复：可到时间、相关经验、报价、需要我提前准备的东西。
+```
+
 ## 5. Trial Task Design
 
 Use a trial task only to reduce risk, not to obtain free work.
 
 Good trial task:
 
-- Small: 30-90 minutes when unpaid, or paid if longer/usable.
+- Small: 30-90 minutes when unpaid and non-usable, or paid if longer/usable.
 - Representative: tests the real skill, not trivia.
 - Clear: same input, same acceptance criteria for all candidates.
 - Respectful: no hidden production work.
+- Reversible: does not require access to sensitive client, student, payment, or identity data.
 
 Scoring rubric:
 
@@ -163,8 +203,48 @@ Red flags:
 - Uses obvious copied samples without source clarity.
 - Requires access to excessive sensitive data.
 - Accepts unlimited changes or impossible deadlines just to win the job.
+- Treats worker safety, privacy, or customer permission as optional.
 
-## 6. Acceptance Checklist
+## 6. Payment And Change Control
+
+Use simple staged payment unless the task is tiny and low-risk.
+
+Common patterns:
+
+| Task Type | Suggested Payment | Notes |
+| --- | --- | --- |
+| Small one-off task | full payment after acceptance or small deposit + final | keep acceptance standard simple |
+| Creative/design/writing | deposit + first draft acceptance + final | define revision rounds |
+| Development/automation | milestone by function or handoff | include test and source handoff |
+| Offline local support | same-day or next-day settlement | define overtime/waiting/transport |
+| Professional provider | contract-based milestone | confirm invoice and legal subject |
+| Consultant review | pay by memo/call/session | require written conclusion when useful |
+
+Change confirmation wording:
+
+```text
+这个需求不在原任务范围内。可以做，但需要先确认三件事：新增交付物、增加费用、调整后的交付时间。确认后我再安排继续。
+```
+
+Revision vs new scope:
+
+- Revision: fixing defects against the original acceptance criteria.
+- New scope: new audience, new format, new content, new platform, new data, new style direction after approval, extra meeting, extra delivery channel, or additional revision round.
+
+## 7. Milestone Operating Rhythm
+
+Use this rhythm for real projects:
+
+```text
+T0 启动：确认目标、资料、交付物、验收标准、付款节点。
+T1 小样：先看方向，不做大规模生产。
+T2 首版：按验收清单检查，不用模糊感受压人。
+T3 返工：只针对原标准内缺陷；新增需求另算。
+T4 终版：交付源文件/记录/账号交接/删除证明。
+T5 结项：付款、归档、记录是否可复用。
+```
+
+## 8. Acceptance Checklist
 
 ```text
 交付物是否完整：
@@ -180,7 +260,7 @@ Red flags:
 尾款/结项/归档是否完成：
 ```
 
-## 7. Human Respect Check
+## 9. Human Respect Check
 
 Before finalizing a plan, check:
 
@@ -192,8 +272,10 @@ Before finalizing a plan, check:
 - Is process autonomy respected?
 - Are changes priced or renegotiated?
 - Are privacy, safety, and dignity protected?
+- For platform/local workers, are waiting, distance, materials, weather, and safety costs recognized?
+- For experts, is the request framed as judgment rather than asking them to guarantee uncertain outcomes?
 
-## 8. Temporary Team Ledger
+## 10. Temporary Team Ledger
 
 After delivery, record:
 
@@ -211,4 +293,18 @@ After delivery, record:
 风险/注意事项：
 是否可推荐给他人：
 下次合作建议：
+```
+
+## 11. Founder Closeout Memo
+
+At the end of a project, ask the founder to record:
+
+```text
+这次最该保留的流程：
+这次最浪费时间的环节：
+下次可以交给 AI 的部分：
+下次必须找真人的部分：
+下次应该提前写进合同/任务书的内容：
+不再合作的原因：
+可长期合作的人/团队：
 ```
